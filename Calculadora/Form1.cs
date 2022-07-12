@@ -40,7 +40,13 @@ namespace Calculadora
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-
-        }
+           
+                float result = float.Parse(new DataTable().Compute(txtTela.Text, null).ToString());
+                txtTela.Text = result.ToString();
+            
+            
+                    }
+        
     }
+
 }
